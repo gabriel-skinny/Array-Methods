@@ -11,7 +11,6 @@ Array.prototype.myReduce = function(callback, valorIncial){
 } 
 
 
-
 let teste = [1, 2, 3, 909]
 
 
