@@ -2,7 +2,7 @@
 Array.prototype.myReduce = function(callback, valorIncial){
   let valorFinal = typeof valorIncial !== undefined ? valorIncial : this[0]
 
-  for(index in this){
+  for(let index = 0; index < this.length; index++){
     valorFinal = callback(valorFinal, this[index], this)
 
   }
@@ -11,7 +11,7 @@ Array.prototype.myReduce = function(callback, valorIncial){
 } 
 
 
-let teste = [1, 2, 3, 909]
+let teste = [55, 42]
 
 
 var resultadoTeste = teste.myReduce((anterior, proximo) =>  anterior + proximo, 0)
